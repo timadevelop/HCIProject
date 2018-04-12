@@ -1,0 +1,154 @@
+//
+// p {
+//   line-height: 20px;
+//   margin-bottom: 20px;
+// }
+
+.wrapper li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper h1 {
+  font-family: 'Crete Round', serif;
+  font-weight: bold;
+  color: #444;
+  // font-size: 1.3em;
+  margin-bottom: 20px;
+}
+.wrapper h2 {
+  font-weight: 300;
+  color: black;
+  // font-size: 55px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.wrapper h3 {
+  // font-size: 30px;
+  color: #444;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.wrapper h4 {
+  // font-size: 24px;
+  color: #444;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.wrapper h5 {
+  // font-size: 15px;
+  color: #444;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.wrapper a {
+  text-decoration: none;
+  color: #444;
+}
+.wrapper a:hover {
+  color: #02b8dd;
+}
+.wrapper strong {
+  font-weight: bold;
+}
+.wrapper small {
+  font-size: 13px;
+  color: #777;
+  font-style: italic;
+}
+.wrapper .clear {
+  clear: both;
+}
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.wrapper ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.wrapper header {
+  height: 120px;
+}
+.wrapper header h1 {
+  float: left;
+  margin-top: 32px;
+}
+
+.wrapper header nav {
+  float: right;
+}
+.wrapper header nav ul li {
+  float: left;
+  display: inline-block;
+  margin-top: 50px;
+}
+.wrapper header nav ul li a {
+  color: #444;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  margin-right: 20px;
+}
+
+// overflow
+#hero-image {
+  width: 99vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  height: 580px;
+  padding-top: 1px;
+  background: #e8eced url('../img/backgrnd.jpg') no-repeat center;
+}
+#hero-image h2 {
+  margin: 180px 0 40px 0;
+}
+.wrapper .button-1 {
+  display: block;
+  text-align: center;
+  background: black;
+  border-radius: 3px;
+  color: #fff;
+  width: 180px;
+  height: 50px;
+  font-size: 20px;
+  line-height: 50px;
+  margin: 0 auto;
+}
+.wrapper .button-1:hover {
+  background-color: #02b8dd;
+  color: #fff;
+}
+
+#features ul {
+  margin: 80px 0;
+}
+#features ul li {
+  width: 300px;
+  padding-top: 140px;
+  float: left;
+  margin-right: 10px;
+  text-align: center;
+}
+
+// no icons actually TODO
+#features ul li.feature-1 {
+  background: url('../images/features-icon-1.png') no-repeat top center;
+}
+#features ul li.feature-2 {
+  background: url('../images/features-icon-2.png') no-repeat top center;
+}
+#features ul li.feature-3 {
+  background: url('../images/features-icon-3.png') no-repeat top center;
+}

@@ -1,0 +1,42 @@
+$nav-inactive-color: #888;
+
+.me-header {
+  background: #444;
+  border-radius: 3px;
+  padding: 20px 20px;
+  color: white;
+}
+
+.me-header,
+.horizontal{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.vertival {
+	display: flex;
+	flex-flow: row wrap;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.vertical > * {
+	display: block;
+}
+
+.me-header .user-logo {
+	margin-right: 20px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.me-nav a {
+	color: $nav-inactive-color;
+	text-decoration: none;
+	margin: 15px 20px;
+}
+
+.me-nav a:hover {
+	color: #333;
+}
