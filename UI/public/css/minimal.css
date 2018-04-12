@@ -675,6 +675,19 @@ div.trip .selected {
 .trip-checklist .fa {
   padding: 0; }
 
+#fragments div ul li {
+  padding: 10px 10px;
+  margin: 1px 0;
+  background: #fff;
+  opacity: 0.9;
+  border-radius: 3px; }
+
+#fragments div ul li:hover {
+  opacity: 1; }
+
+#fragments div ul li i:hover {
+  cursor: pointer; }
+
 .fa {
   padding: 20px;
   font-size: 30px;
