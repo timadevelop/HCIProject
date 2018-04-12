@@ -73,7 +73,7 @@ li {
 	flex-direction: column;
 }
 
-.vertical > * {
+.vertical > a {
 	display: block;
 }
 
@@ -589,3 +589,4 @@ ul.blocknav {
 @import 'index';
 @import 'trips';
 @import 'trip';
+@import 'fa';

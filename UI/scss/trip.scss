@@ -15,3 +15,12 @@ div.trip .btn {
 div.trip hr {
   margin: 20px 0;
 }
+
+div.trip .selected {
+  color: #999;
+  cursor: pointer;
+}
+
+.trip-navigation .hidden {
+  display: none;
+}

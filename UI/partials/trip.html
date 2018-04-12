@@ -1,43 +1,185 @@
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="me-section">
   <!-- <div class="horizontal me-header">
-    <img class="user-logo" src="img/original.jpeg"/>
-    <div class="vertical">
-      <h1>Geogri Ivanov</h1>
-      <p>@geogri</p>
-      <p>1372 trips, 1743 plans</p>
-    </div>
-  </div> -->
-  <div class="flex horizontal me-content">
-    <div class="flex1 me-nav vertical">
-      <a href="trips.html" class="bold">Trips</a>
-      <a href="#">Plans</a>
-      <a href="#">Explore</a>
-      <a href="#">Setting</a>
-      <a href="#">Ensur</a>
-    </div>
-    <div class="flex3">
-      <div class="trip">
-        <div class="flex space-between vertical">
-          <a>
-            <img class="flex1 trip-logo" src="img/some_logo.jpeg"/>
-          </a>
-          <div class="flex3 trip-content flex vertical">
-            <a><h4>Trip to Asia</h4></a>
-            <p>short description</p>
-            <p>created : 22.01.2016</p>
+  <img class="user-logo" src="img/original.jpeg"/>
+  <div class="vertical">
+  <h1>Geogri Ivanov</h1>
+  <p>@geogri</p>
+  <p>1372 trips, 1743 plans</p>
+</div>
+</div> -->
+<div class="me-content">
+  <a href="trips.html" class="bold">Back to Trips</a>
+  <div class="flex3">
+    <div class="trip">
+      <div class="flex space-between vertical">
+        <a>
+          <img class="flex1 trip-logo" src="img/some_logo.jpeg"/>
+        </a>
+        <div class="flex3 trip-content flex vertical">
+          <a><h4>Trip to Asia</h4></a>
+          <p>short description</p>
+          <p>created : 22.01.2016</p>
+        </div>
+        <div class="flex flex1 horizontal trip-buttons space-around">
+          <a class="btn">remove</a>
+          <a class="btn">share</a>
+        </div>
+        <hr>
+        <div class="trip-long-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <hr>
+        <div class="trip-navigation">
+          <nav id="trip-tabs" class="flex horizontal space-around">
+            <a onclick="changeTab(this, 'modify-trip-scenario')" class="selected">Scenario</a>
+            <a onclick="changeTab(this, 'modify-trip-transport')">Transport</a>
+            <a onclick="changeTab(this, 'modify-trip-checklist')">Checklist</a>
+            <a onclick="changeTab(this, 'modify-trip-services')">Services</a>
+            <a onclick="changeTab(this, 'modify-trip-tasks')">Tasks</a>
+            <a onclick="changeTab(this, 'modify-trip-travelers')">Travelers</a>
+          </nav>
+
+          <div id="fragments">
+
+            <div id="modify-trip-scenario">
+              <p>input here points(point 2.3) TODO</p>
+              <!-- TODO  -->
+              <iframe
+              width="100%"
+              height="450"
+              frameborder="0" style="border:0"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC3enjNB85Q9RzgtQgE82eg5E8K8w0Wloc
+              &q=Space+Needle,Seattle+WA" allowfullscreen>
+            </iframe>
           </div>
-          <div class="flex flex1 horizontal trip-buttons">
-            <a class="btn">remove</a>
-            <a class="btn">share</a>
+          <div class="hidden" id="modify-trip-transport">
+            <p>Select transport(2.4)</p>
           </div>
-          <hr>
-          <div class="trip-long-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+          <div class="hidden" id="modify-trip-checklist">
+            <p>Checklist(2.5)</p>
+          </div>
+          <div class="hidden" id="modify-trip-services">
+            <p>Services()</p>
+          </div>
+          <div class="hidden" id="modify-trip-tasks">
+            <p>Tasks to be done while a trip(2.7)</p>
+          </div>
+          <div class="hidden" id="modify-trip-travelers">
+            <p>other users(2.8)</p>
           </div>
         </div>
       </div>
+      <hr>
+      <div class="trip-cost">
+        <p>Summary costs: (p 2.10)</p>
+        <ul>
+          <li>
+            Insur - 50$
+          </li>
 
+          <li>
+            Taxi - 20$
+          </li>
+          <li>
+            Food - 50$
+          </li>
+          <li>
+            Insur - 50$
+          </li>
+          <p>some amazing shopping cart design here</p>
+        </ul>
+      </div>
+      <hr>
+      <div class="trip-integrations">
+        <p>Integrations (p 2.11)</p>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-pinterest"></a>
+
+      </div>
+      <hr>
+      <div class="trip-reviews">
+        <p>Reviews (point 2.9)</p>
+
+        <div id="disqus_thread"></div>
+
+      </div>
     </div>
   </div>
+
 </div>
+</div>
+</div>
+
+
+<script>
+
+function changeTab(el, tabName) {
+  var children =  document.getElementById('trip-tabs').children;
+  for (i = 0; i < children.length; i++)
+  {
+    children[i].classList.remove('selected');
+  }
+  el.classList.add('selected');
+  window.shs = document.getElementById('fragments');
+  var children =  document.getElementById('fragments').children;
+
+  for (i = 0; i < children.length; i++)
+  {
+    console.log(children[i]);
+    children[i].classList.add('hidden');
+  }
+  document.getElementById(tabName).classList.remove('hidden');
+}
+
+</script>
+
+
+<script>
+// TODO : SETUP DISQUS
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT
+*  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR
+*  PLATFORM OR CMS.
+*
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT:
+*  https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+// Replace PAGE_URL with your page's canonical URL variable
+this.page.url = PAGE_URL;
+
+// Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.identifier = PAGE_IDENTIFIER;
+};
+*/
+
+
+var disqus_shortname = 'sorax',
+disqus_identifier = 'spotlight01';
+
+(function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+  var d = document, s = d.createElement('script');
+
+  // IMPORTANT: Replace EXAMPLE with your forum shortname!
+  s.src = 'https://spotlight01.disqus.com/embed.js';
+
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>
+  Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript" rel="nofollow">
+    comments powered by Disqus.
+  </a>
+</noscript>
