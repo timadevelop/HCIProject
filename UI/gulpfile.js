@@ -7,7 +7,7 @@ livereload = require('gulp-livereload'),
       sass = require('gulp-sass');
 
 
-var pages = ['index.html', 'login.html', 'me.html', 'about.html'];
+var pages = ['index.html', 'login.html', 'me.html', 'about.html', 'login_company.html'];
 
 var partials_src = 'partials/';
 
