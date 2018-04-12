@@ -7,21 +7,9 @@ $nav-inactive-color: #888;
   color: white;
 }
 
-.me-header,
-.horizontal{
+.me-header{
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
-}
-
-.vertival {
-	display: flex;
-	flex-flow: row wrap;
-	flex-direction: column;
-	justify-content: space-around;
-}
-.vertical > * {
-	display: block;
 }
 
 .me-header .user-logo {
@@ -39,4 +27,17 @@ $nav-inactive-color: #888;
 
 .me-nav a:hover {
 	color: #333;
+}
+
+
+
+
+@media (max-width: 769px) {
+  .me-content {
+    flex-flow: column;
+    justify-content: flex-start;
+  }
+  .me-nav > a {
+    text-align: center;
+  }
 }

@@ -12,7 +12,8 @@ var pages = ['index.html',
  'me.html',
  'about.html',
  'login_company.html',
- 'done.html'];
+ 'done.html',
+ 'trips.html'];
 
 var partials_src = 'partials/';
 
