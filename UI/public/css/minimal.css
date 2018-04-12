@@ -672,6 +672,9 @@ div.trip .selected {
 .trip-navigation .hidden {
   display: none; }
 
+.trip-checklist .fa {
+  padding: 0; }
+
 .fa {
   padding: 20px;
   font-size: 30px;
