@@ -1,0 +1,16 @@
+{
+  "name": "navigatioapp",
+  "version": "0.0.1",
+  "description": "site for managing travel plans",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1"
+  },
+  "scripts": {
+    "test": "echo \"No testing specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
