@@ -622,7 +622,7 @@ i[class^="fa"] {
 .trips-list {
   width: 100%; }
 
-.trip {
+li.trip {
   width: 100%;
   height: 100px;
   border-bottom: 1px solid #E8E8E8;
@@ -652,3 +652,17 @@ i[class^="fa"] {
 
 .trip .trip-content > p {
   color: #9E9E9E; }
+
+div.trip {
+  text-align: center;
+  border-radius: 3px;
+  background: #F9F9F9;
+  height: 100%;
+  width: 100%;
+  padding: 50px 50px; }
+
+div.trip .btn {
+  width: 100px; }
+
+div.trip hr {
+  margin: 20px 0; }

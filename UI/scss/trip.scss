@@ -1,0 +1,17 @@
+$color-trip-grey: #F9F9F9;
+div.trip {
+  text-align: center;
+  border-radius: 3px;
+  background: $color-trip-grey;
+  height: 100%;
+  width: 100%;
+  padding: 50px 50px;
+}
+
+div.trip .btn {
+  width: 100px;
+}
+
+div.trip hr {
+  margin: 20px 0;
+}
