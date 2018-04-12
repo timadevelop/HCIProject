@@ -116,11 +116,9 @@ h6 {
   line-height: 1.2em; }
 
 /* Links */
-a:link,
-a:visited,
-a:active {
-  color: #772953;
-  text-decoration: underline; }
+a {
+  text-decoration: none;
+  color: #111; }
 
 a:hover,
 a:focus {
