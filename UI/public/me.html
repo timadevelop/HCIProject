@@ -32,19 +32,52 @@
       <p>1372 trips, 1743 plans</p>
     </div>
   </div>
-  <div class="horizontal me-content">
-    <div class="me-nav vertical">
-      <a href="trips.html">Trips</a>
+  <div class="flex horizontal me-content">
+    <div class="flex1 me-nav vertical">
+      <a href="trips.html" class="bold">Trips</a>
       <a href="#">Plans</a>
       <a href="#">Explore</a>
       <a href="#">Setting</a>
       <a href="#">Ensur</a>
     </div>
-    <div>
-      <p>allm</p>
+    <div class="flex3">
+      <hr>
+      <ul class="trips">
+        <li class="trip">
+          <div class="flex space-between horizontal">
+            <a>
+              <img class="flex1 trip-logo" src="img/some_logo.jpeg"/>
+            </a>
+            <div class="flex3 trip-content flex vertical">
+              <a><h4>Trip to Asia</h4></a>
+              <p>short description</p>
+              <p>created : 22.01.2016</p>
+            </div>
+            <div class="flex flex1 flex-end vertical">
+              <a class="btn">remove</a>
+              <a class="btn">share</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+    <div class="flex flex1 vertical card">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
     </div>
   </div>
 </div>
+
+<script>
+function multiplyNode(node, count, deep) {
+    for (var i = 0, copy; i < count - 1; i++) {
+        copy = node.cloneNode(deep);
+        node.parentNode.insertBefore(copy, node);
+    }
+}
+
+multiplyNode(document.querySelector('.trip'), 7, true);
+</script>
 
 <hr />
 Footer
