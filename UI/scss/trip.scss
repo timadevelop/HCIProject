@@ -66,3 +66,26 @@ div.trip .selected {
    white-space: nowrap;
    width: 300px;
 }
+
+
+#trip_services_list .trip_service_item {
+  padding: 5px 20px;
+  text-align: left;
+  transition: all .3s ease-out;
+  opacity: 0.7;
+}
+#trip_services_list .trip_service_item:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+#trip_services_list .trip_service_item img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.trip_service_item > * {
+
+  margin: auto 10px;
+}
