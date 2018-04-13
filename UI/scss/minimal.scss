@@ -289,11 +289,16 @@ p#warningComment {
   color: red;
 }
 
+.ui-form input[type=text],
+.ui-form input[type=email],
+.ui-form textarea{
+  width: 100%;
+}
+
 input[type=text],
 input[type=email],
 textarea {
   border: 0px;
-  width: 100%;
   height: 2.0em;
   margin: 2px 0;
   padding-left: 0.5em;
