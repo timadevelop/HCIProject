@@ -17,7 +17,11 @@ var pages = ['index.html',
 'trip.html',
 'search.html',
 'companies.html',
-'services.html'];
+'services.html',
+'company.html',
+'search_company.html',
+'services_company.html',
+'users_company.html'];
 
 var partials_src = 'partials/';
 

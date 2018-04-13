@@ -1,0 +1,36 @@
+<div class="me-section">
+  <div class="horizontal me-header">
+    <img class="user-logo" src="img/original.jpeg"/>
+    <div class="vertical">
+      <h1>Company name</h1>
+      <p>company.com</p>
+      <p>1358 clients, 1 service</p>
+    </div>
+  </div>
+
+  <div class="flex horizontal">
+    <div class="flex1 me-nav vertical">
+      <!-- for loop TODO -->
+      @@if (selectedItem === 'clients') {
+        <a href="users_company.html" class="bold">Clients</a>
+      }
+      @@if(selectedItem !== 'clients') {
+        <a href="users_company.html">Clients</a>
+      }
+
+      @@if (selectedItem === 'search') {
+        <a href="search_company.html" class="bold">Search</a>
+      }
+      @@if(selectedItem !== 'search') {
+        <a href="search_company.html">Search</a>
+      }
+
+      @@if (selectedItem === 'services') {
+        <a href="services_company.html" class="bold">Services</a>
+      }
+      @@if(selectedItem !== 'services') {
+        <a href="services_company.html">Services</a>
+      }
+    </div>
+    <div class="flex3 me-content">
+      <hr>
