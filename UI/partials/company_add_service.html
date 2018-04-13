@@ -1,0 +1,20 @@
+@@include('./company/header.html', {
+  "selectedItem": "services"
+})
+<h1>Add New Service</h1>
+<form action="" class="ui-form no-padding">
+  <div class="form-row">
+    <input type="text" id="service_name" required autocomplete="off"><label for="service_name">Service name</label>
+  </div>
+  <div class="form-row">
+    <input type="text" id="description" required autocomplete="off"><label for="description">Description</label>
+  </div>
+  <div class="form-row">
+    <input type="number" id="price" required autocomplete="off"><label for="price">Price</label>
+  </div>
+  <div class="form-row">
+    <input type="text" id="details" required autocomplete="off"><label for="details">Additional details</label>
+  </div>
+  <p><input type="submit" value="Add" class="button-1"></p>
+</form>
+@@include('./company/footer.html')

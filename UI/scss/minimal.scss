@@ -585,6 +585,42 @@ ul.blocknav {
 	background: $color-red;
 }
 
+#add_service_btn {
+  align-self: center;
+  display: block;
+  text-align: center;
+  background: black;
+  border-radius: 3px;
+  color: #fff;
+  width: 90px;
+  height: 25px;
+  font-size: 15px;
+  line-height: 25px;
+  margin-left: 16px;
+}
+
+#add_service_btn:hover {
+  background-color: #02b8dd;
+  color: #fff;
+}
+
+.wrapper .button-1 {
+  display: block;
+  text-align: center;
+  background: black;
+  border-radius: 3px;
+  color: #fff;
+  width: 180px;
+  height: 50px;
+  font-size: 20px;
+  line-height: 50px;
+  margin: 0 auto;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
 /* imports */
 @import 'me';
 @import 'index';

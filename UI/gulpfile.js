@@ -21,7 +21,8 @@ var pages = ['index.html',
 'company.html',
 'search_company.html',
 'services_company.html',
-'users_company.html'];
+'users_company.html',
+'company_add_service.html'];
 
 var partials_src = 'partials/';
 
