@@ -17,15 +17,15 @@ Yup.
 
 2.2 - регистрация - done - (`login.html`)
 
-2.3 - maps - ~done (maybe add some route) - (`trip/scenario.html`)
+2.3 - maps - DONE? (maybe add some route) - (`trip/scenario.html`)
 
-2.4 - transport - added, but need to edit - (`trip/transport.html`)
+2.4 - transport - DONE? - (`trip/transport.html`)
 
-2.5 - added, but need to edit - (`trip/checklist.html`)
+2.5 - DONE? - (`trip/checklist.html`)
 
 2.6 - added, but need to edit - (`trip/services.html`)
 
-2.7 - added, but need to edit - (`trip/tasks.html`)
+2.7 - DONE? - (`trip/tasks.html`)
 
 2.8 - added, but need to edit - (`trip/travelers.html`)
 
