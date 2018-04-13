@@ -305,7 +305,8 @@ textarea {
 input:focus,
 textarea:focus {
   border: 0px;
-  border-bottom: 3px solid #1e90ff;
+  outline: 0px;
+  border-bottom: 1px solid $color-grey;
 }
 
 input[type=submit]:focus {
