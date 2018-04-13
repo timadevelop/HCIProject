@@ -1,0 +1,29 @@
+<ul class="trips">
+  <li class="trip">
+    <div class="flex space-between horizontal">
+      <a href="trip.html">
+        <img class="flex1 trip-logo" src="img/some_logo.jpeg"/>
+      </a>
+      <div class="flex3 trip-content flex vertical">
+        <a href="trip.html"><h4>Trip to Asia</h4></a>
+        <p>short description</p>
+        <p>created : 22.01.2016</p>
+      </div>
+      <div class="flex flex1 flex-end vertical">
+        <a class="btn">remove</a>
+        <a class="btn">share</a>
+      </div>
+    </div>
+  </li>
+</ul>
+
+<script>
+function multiplyNode(node, count, deep) {
+  for (var i = 0, copy; i < count - 1; i++) {
+    copy = node.cloneNode(deep);
+    node.parentNode.insertBefore(copy, node);
+  }
+}
+
+multiplyNode(document.querySelector('.trip'), 7, true);
+</script>

@@ -1,28 +1,31 @@
 'use strict';
 
 var   gulp = require('gulp'),
-    concat = require('gulp-concat'),
-       del = require('del'),
+concat = require('gulp-concat'),
+del = require('del'),
 livereload = require('gulp-livereload'),
-      sass = require('gulp-sass'),
+sass = require('gulp-sass'),
 fileinclude = require('gulp-file-include');
 
 var pages = ['index.html',
- 'login.html',
- 'me.html',
- 'about.html',
- 'login_company.html',
- 'done.html',
- 'trips.html',
-  'trip.html'];
+'login.html',
+'about.html',
+'login_company.html',
+'done.html',
+'trips.html',
+'me.html',
+'trip.html',
+'search.html',
+'companies.html',
+'services.html'];
 
 var partials_src = 'partials/';
 
 gulp.task('compileSass', function() {
   return gulp.src("scss/minimal.scss")
-      .pipe(sass())
-      .pipe(gulp.dest('public/css'))
-      .pipe(livereload());
+  .pipe(sass())
+  .pipe(gulp.dest('public/css'))
+  .pipe(livereload());
 });
 
 
