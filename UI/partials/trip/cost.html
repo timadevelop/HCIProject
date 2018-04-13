@@ -1,19 +1,39 @@
 <div class="trip-cost">
   <p>Summary costs: (p 2.10)</p>
-  <ul>
+  <ul id="trip_cost_list">
     <li>
-      Insur - 50$
+      <div class="flex horizontal space-between trip_cost_item">
+        <h5 class="flex3">Taxi</h5>
+        <p class="flex1">|</p>
+        <p class="flex3">by: Uber</p>
+        <p class="flex1">|</p>
+        <p class="flex3">50$</p>
+      </div>
+    </li>
+    <li>
+      <div class="flex horizontal space-between trip_cost_item">
+        <h5 class="flex3">Air </h5>
+        <p class="flex1">|</p>
+        <p class="flex3">by: Aviasales</p>
+        <p class="flex1">|</p>
+        <p class="flex3">250$</p>
+      </div>
+    </li>
+    <li>
+      <div class="flex horizontal space-between trip_cost_item">
+        <h5 class="flex3">House rent</h5>
+        <p class="flex1">|</p>
+        <p class="flex3">by: Airbnb</p>
+        <p class="flex1">|</p>
+        <p class="flex3">500$</p>
+      </div>
     </li>
 
-    <li>
-      Taxi - 20$
-    </li>
-    <li>
-      Food - 50$
-    </li>
-    <li>
-      Insur - 50$
-    </li>
-    <p>some amazing shopping cart design here</p>
-  </ul>
-</div>
+      <li>
+        <div class="flex horizontal flex-end trip_cost_item" id="cost_final">
+          <h5>Summary:</h5>
+          <p>50$</p>
+        </div>
+      </li>
+
+  </div>
