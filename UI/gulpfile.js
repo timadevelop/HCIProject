@@ -4,8 +4,8 @@ var   gulp = require('gulp'),
     concat = require('gulp-concat'),
        del = require('del'),
 livereload = require('gulp-livereload'),
-      sass = require('gulp-sass');
-
+      sass = require('gulp-sass'),
+fileinclude = require('gulp-file-include');
 
 var pages = ['index.html',
  'login.html',
@@ -30,6 +30,10 @@ gulp.task("concatPages", function() {
   pages.forEach((page) => {
     gulp.src([partials_src + 'header.html', partials_src + page, partials_src + 'footer.html'])
     .pipe(concat(page))
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: partials_src
+    }))
     .pipe(gulp.dest('public'))
     .pipe(livereload());
   });

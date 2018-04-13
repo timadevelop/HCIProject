@@ -1,15 +1,6 @@
-
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="me-section">
-  <!-- <div class="horizontal me-header">
-  <img class="user-logo" src="img/original.jpeg"/>
-  <div class="vertical">
-  <h1>Geogri Ivanov</h1>
-  <p>@geogri</p>
-  <p>1372 trips, 1743 plans</p>
-</div>
-</div> -->
 <div class="me-content">
   <a href="trips.html" class="bold">Back to Trips</a>
   <div class="flex3">
@@ -44,255 +35,23 @@
           </nav>
 
           <div id="fragments">
-
-            <div id="modify-trip-scenario">
-              <p>input here points(point 2.3) TODO</p>
-              <!-- TODO  -->
-              <iframe
-              width="100%"
-              height="450"
-              frameborder="0" style="border:0"
-              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC3enjNB85Q9RzgtQgE82eg5E8K8w0Wloc
-              &q=Space+Needle,Seattle+WA" allowfullscreen>
-            </iframe>
-          </div>
-          <div class="hidden" id="modify-trip-transport">
-            <p>Select transport(2.4)</p>
-            <select name="transport-list">
-              <option value="own">own</option>
-              <option value="rent-a-car">rent-a-car</option>
-              <option value="taxi">taxi</option>
-              <option value="bike">bike</option>
-            </select>
-
-          list of transport (filter by selected value)
-            <ul class="">
-              <li class="">
-                <div class="flex space-around horizontal">
-                  <p>short description</p>
-                  <p>til: 22.09.2018</p>
-                    <i class="fa fa-check"></i>
-                    <i class="fa fa-trash"></i>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="hidden" id="modify-trip-checklist">
-            <p>(2.5) - Потребител създава чеклист с необходими неща, задава аларми и нотификации за себе си и екипа на пътуване. Добавя в списък „застраховка от компания Х “, което автоматично праща заявка към застраховаща компания.</p>
-
-            <ul class="trip-checklist">
-              <li class="">
-                <div class="flex space-around horizontal">
-                  <p>short description</p>
-                  <p>til: 22.09.2018</p>
-                  <div class="flex flex-end horizontal">
-
-                    <i class="fa fa-check"></i>
-                    <i class="fa fa-trash"></i>
-                  </div>
-                </div>
-              </li><li class="">
-                <div class="flex space-around horizontal">
-                  <p>short description</p>
-                  <p>til: 22.09.2018</p>
-                  <div class="flex flex-end horizontal">
-
-                    <i class="fa fa-check"></i>
-                    <i class="fa fa-trash"></i>
-                  </div>
-                </div>
-              </li><li class="">
-                <div class="flex space-around horizontal">
-                  <p>short description</p>
-                  <p>til: 22.09.2018</p>
-                  <div class="flex flex-end horizontal">
-
-                    <i class="fa fa-check"></i>
-                    <i class="fa fa-trash"></i>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="hidden" id="modify-trip-services">
-            <p>Services()</p>
-          </div>
-          <div class="hidden" id="modify-trip-tasks">
-            <p>Tasks to be done while a trip(2.7) - Ако потребител има дейности които бих искал да извърши по време на пътуване си, то той създава списък с задачи които имат крайна дата за изпълнение и приоритет. По време на пътуване потребител получава нотификации за тези дейности.</p>
-
-            <ul class="trip-checklist">
-              <li class="">
-                <div class="flex space-around horizontal">
-                  <p>short description</p>
-                  <p>til: 22.09.2018</p>
-                  <div class="flex flex-end horizontal">
-
-                    <i class="fa fa-check"></i>
-                    <i class="fa fa-trash"></i>
-                  </div>
-                </div>
-              </li><li class="">
-                <div class="flex space-around horizontal">
-                  <p>short description</p>
-                  <p>til: 22.09.2018</p>
-                  <div class="flex flex-end horizontal">
-
-                    <i class="fa fa-check"></i>
-                    <i class="fa fa-trash"></i>
-                  </div>
-                </div>
-              </li><li class="">
-                <div class="flex space-around horizontal">
-                  <p>short description</p>
-                  <p>til: 22.09.2018</p>
-                  <div class="flex flex-end horizontal">
-
-                    <i class="fa fa-check"></i>
-                    <i class="fa fa-trash"></i>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="hidden" id="modify-trip-travelers">
-            <p>other users(2.8)</p>
-
-            <p>
-              Към вече дефиниран сценарии за пътуване (2.3) потребителят, създал сценария, праща покани към други регистрирани потребители. Също така той наглася правата на поканените потребители относно пътуването – до каква степен те могат да го променят.</p>
-              <ul class="trip-checklist">
-                <li class="">
-                  <div class="flex space-around horizontal">
-                    <p>Igor Igor</p>
-                    <p>@igor</p>
-                    <div class="flex flex-end horizontal">
-
-                      <i class="fa fa-check"></i>
-                      <i class="fa fa-trash"></i>
-                    </div>
-                  </div>
-                </li><li class="">
-                  <div class="flex space-around horizontal">
-                    <p>Ivo (vo)</p>
-                    <p>@ivo</p>
-                    <div class="flex flex-end horizontal">
-
-                      <i class="fa fa-check"></i>
-                      <i class="fa fa-trash"></i>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-
-            </div>
+          @@include('./trip/scenario.html')
+          @@include('./trip/transport.html')
+          @@include('./trip/checklist.html')
+          @@include('./trip/services.html')
+          @@include('./trip/tasks.html')
+          @@include('./trip/travelers.html')
           </div>
         </div>
         <hr>
-        <div class="trip-cost">
-          <p>Summary costs: (p 2.10)</p>
-          <ul>
-            <li>
-              Insur - 50$
-            </li>
-
-            <li>
-              Taxi - 20$
-            </li>
-            <li>
-              Food - 50$
-            </li>
-            <li>
-              Insur - 50$
-            </li>
-            <p>some amazing shopping cart design here</p>
-          </ul>
-        </div>
+        @@include('./trip/cost.html')
         <hr>
-        <div class="trip-integrations">
-          <p>Integrations (p 2.11)</p>
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-google"></a>
-          <a href="#" class="fa fa-linkedin"></a>
-          <a href="#" class="fa fa-youtube"></a>
-          <a href="#" class="fa fa-instagram"></a>
-          <a href="#" class="fa fa-pinterest"></a>
-
-        </div>
+        @@include('./trip/integrations.html')
         <hr>
-        <div class="trip-reviews">
-          <p>Reviews (point 2.9)</p>
-
-          <div id="disqus_thread"></div>
-
-        </div>
+        @@include('./trip/reviews.html')
       </div>
     </div>
 
   </div>
 </div>
 </div>
-
-
-<script>
-
-function changeTab(el, tabName) {
-  var children =  document.getElementById('trip-tabs').children;
-  for (i = 0; i < children.length; i++)
-  {
-    children[i].classList.remove('selected');
-  }
-  el.classList.add('selected');
-  window.shs = document.getElementById('fragments');
-  var children =  document.getElementById('fragments').children;
-
-  for (i = 0; i < children.length; i++)
-  {
-    console.log(children[i]);
-    children[i].classList.add('hidden');
-  }
-  document.getElementById(tabName).classList.remove('hidden');
-}
-
-</script>
-
-
-<script>
-// TODO : SETUP DISQUS
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT
-*  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR
-*  PLATFORM OR CMS.
-*
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT:
-*  https://disqus.com/admin/universalcode/#configuration-variables
-*/
-/*
-var disqus_config = function () {
-// Replace PAGE_URL with your page's canonical URL variable
-this.page.url = PAGE_URL;
-
-// Replace PAGE_IDENTIFIER with your page's unique identifier variable
-this.page.identifier = PAGE_IDENTIFIER;
-};
-*/
-
-
-var disqus_shortname = 'sorax',
-disqus_identifier = 'spotlight01';
-
-(function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
-  var d = document, s = d.createElement('script');
-
-  // IMPORTANT: Replace EXAMPLE with your forum shortname!
-  s.src = 'https://spotlight01.disqus.com/embed.js';
-
-  s.setAttribute('data-timestamp', +new Date());
-  (d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>
-  Please enable JavaScript to view the
-  <a href="https://disqus.com/?ref_noscript" rel="nofollow">
-    comments powered by Disqus.
-  </a>
-</noscript>
