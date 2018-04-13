@@ -1,21 +1,102 @@
 <div class="hidden" id="modify-trip-transport">
-  <p>Select transport(2.4)</p>
-  <select name="transport-list">
+  <p>Choose the way to travel: </p>
+  <select name="transport-list" onchange="filter(this.options[this.selectedIndex].value)">
     <option value="own">own</option>
     <option value="rent-a-car">rent-a-car</option>
     <option value="taxi">taxi</option>
     <option value="bike">bike</option>
   </select>
+  <ul id="transport_list">
+    <li class="transport_item">
+      <div class="flex space-between horizontal">
+        <p class="type">own</p>
+        <p>Ok, you can find it yourself</p>
+      </div>
+    </li>
+    <!-- rent a car -->
+    <li class="transport_item">
+      <div class="flex space-between horizontal">
+        <p class="type">rent-a-car</p>
+        <p>BMW e39</p>
+        <p>20$/day</p>
+        <p>provided by Rcar Ltd.</p>
+        <div class="flex flex-end horizontal">
+            <i class="fa fa-check">rent</i>
+            <i class="fa fa-trash">hide</i>
+        </div>
+      </div>
+    </li>
+    <li class="transport_item">
+      <div class="flex space-between horizontal">
+        <p class="type">rent-a-car</p>
+        <p>Mercedes Benz E200</p>
+        <p>30$/day</p>
+        <p>provided by Rcar Ltd.</p>
 
-list of transport (filter by selected value)
-  <ul class="">
-    <li class="">
-      <div class="flex space-around horizontal">
-        <p>short description</p>
-        <p>til: 22.09.2018</p>
-          <i class="fa fa-check"></i>
-          <i class="fa fa-trash"></i>
+        <div class="flex flex-end horizontal">
+            <i class="fa fa-check">rent</i>
+            <i class="fa fa-trash">hide</i>
+        </div>
+        </div>
+    </li>
+    <li class="transport_item">
+      <div class="flex space-between horizontal">
+        <p class="type">rent-a-car</p>
+        <p>Mazda 3</p>
+        <p>15$/day</p>
+        <p>provided by rentMe Ltd.</p>
+        <div class="flex flex-end horizontal">
+            <i class="fa fa-check">rent</i>
+            <i class="fa fa-trash">hide</i>
+        </div>
+      </div>
+    </li>
+    <!-- taxi -->
+
+    <li class="transport_item">
+      <div class="flex space-between horizontal">
+        <p class="type">taxi</p>
+        <p>from airport</p>
+        <p>1$/mile</p>
+        <p>provided by taxLw Ltd.</p>
+        <div class="flex flex-end horizontal">
+            <i class="fa fa-check">get</i>
+            <i class="fa fa-trash">hide</i>
+        </div>
+      </div>
+    </li>
+
+    <li class="transport_item">
+      <div class="flex space-between horizontal">
+        <p class="type">taxi</p>
+        <p>from bus station</p>
+        <p>0.7$/mile</p>
+        <p>provided by taxLw Ltd.</p>
+        <div class="flex flex-end horizontal">
+            <i class="fa fa-check">get</i>
+            <i class="fa fa-trash">hide</i>
+        </div>
+      </div>
+    </li>
+
+
+    <!-- bike -->
+
+    <li class="transport_item">
+      <div class="flex space-between horizontal">
+        <p class="type">bike</p>
+        <p>ELECTRIFIED bike share</p>
+        <p>1$/hour</p>
+        <p>provided by JUMP Ltd.</p>
+        <div class="flex flex-end horizontal">
+            <i class="fa fa-check">get</i>
+            <i class="fa fa-trash">hide</i>
+        </div>
       </div>
     </li>
   </ul>
 </div>
+
+<script src="js/transport.js">
+
+</script>
