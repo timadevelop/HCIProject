@@ -1,0 +1,32 @@
+@@include('./company/header.html', {
+  "selectedItem": "partners"
+})
+<h1>Propose New Partnership</h1>
+<form action="" class="ui-form no-padding">
+  <div class="form-row">
+    <input type="text" id="partnership_name" required autocomplete="off"><label for="partnership_name">Partnership name</label>
+  </div>
+  <div class="form-row">
+    <input type="text" id="description" required autocomplete="off"><label for="description">Description</label>
+  </div>
+  <div class="form-row">
+    <label for="price">Type</label>
+    <select>
+      <option value="volvo">Insurance</option>
+      <option value="saab">Taxi</option>
+      <option value="mercedes">Rent-a-car</option>
+      <option value="audi">Hotel</option>
+    </select>
+  </div>
+  <div class="form-row">
+    <label for="price">Desired partner company</label>
+    <select>
+      <option value="volvo">Bulstrad</option>
+      <option value="saab">Fast taxi inc.</option>
+      <option value="mercedes">Cars co</option>
+      <option value="audi">Hilton</option>
+    </select>
+  </div>
+  <p><input type="submit" value="Send proposal" class="button-1"></p>
+</form>
+@@include('./company/footer.html')

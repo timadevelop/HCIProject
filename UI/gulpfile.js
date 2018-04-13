@@ -22,7 +22,9 @@ var pages = ['index.html',
 'search_company.html',
 'services_company.html',
 'users_company.html',
-'company_add_service.html'];
+'company_add_service.html',
+'partners_company.html',
+'company_add_partner.html'];
 
 var partials_src = 'partials/';
 

@@ -585,7 +585,16 @@ ul.blocknav {
 	background: $color-red;
 }
 
-#add_service_btn {
+.form-row select {
+  display: block;
+  width: 100%;
+  padding: 0 10px;
+  font-family: 'Roboto', sans-serif;
+  border-width: 0;
+  border-bottom: 2px solid $color-blue;
+}
+
+#add_btn {
   align-self: center;
   display: block;
   text-align: center;
@@ -599,7 +608,7 @@ ul.blocknav {
   margin-left: 16px;
 }
 
-#add_service_btn:hover {
+#add_btn:hover {
   background-color: #02b8dd;
   color: #fff;
 }

@@ -31,6 +31,13 @@
       @@if(selectedItem !== 'services') {
         <a href="services_company.html">Services</a>
       }
+
+      @@if (selectedItem === 'partners') {
+        <a href="partners_company.html" class="bold">Partners</a>
+      }
+      @@if(selectedItem !== 'partners') {
+        <a href="partners_company.html">Partners</a>
+      }
     </div>
     <div class="flex3 me-content">
       <hr>
