@@ -7,3 +7,6 @@ Yup.
 
 
 `gulp` = `gulp watch` by default - livereloads page while you save files from vim / other editors
+
+
+`gulp clean` for deleting generated files
