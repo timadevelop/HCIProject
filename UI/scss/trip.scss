@@ -68,24 +68,28 @@ div.trip .selected {
 }
 
 
-#trip_services_list .trip_service_item {
+#trip_services_list .trip_service_item,
+#trip_travelers_list .trip_traveler_item {
   padding: 5px 20px;
   text-align: left;
   transition: all .3s ease-out;
   opacity: 0.7;
 }
-#trip_services_list .trip_service_item:hover {
+#trip_services_list .trip_service_item:hover
+#trip_travelers_list .trip_traveler_item:hover {
   cursor: pointer;
   opacity: 1;
 }
 
-#trip_services_list .trip_service_item img {
+#trip_services_list .trip_service_item img,
+#trip_travelers_list .trip_traveler_item img {
   border-radius: 50%;
   height: 50px;
   width: 50px;
 }
 
-.trip_service_item > * {
-
+.trip_service_item > *,
+.trip_traveler_item > *{
   margin: auto 10px;
+  text-align: center;
 }

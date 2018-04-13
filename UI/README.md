@@ -23,7 +23,7 @@ Yup.
 
 2.5 - DONE? - (`trip/checklist.html`)
 
-2.6 - added, but need to edit - (`trip/services.html`)
+2.6 - DONE? - show alarm setter? - (`trip/services.html`)
 
 2.7 - DONE? - (`trip/tasks.html`)
 
