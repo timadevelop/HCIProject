@@ -100,9 +100,14 @@ div.trip .selected {
 
 .trip_cost_item {
   background: white;
+  padding: 3px 0;
 }
 #cost_final {
   text-align: right;
   background: $color-grey;
   color: white;
+}
+
+.trip_cost_item .fa{
+  margin: 0; 
 }
