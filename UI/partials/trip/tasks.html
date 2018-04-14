@@ -1,20 +1,20 @@
 <div class="hidden" id="modify-trip-tasks">
   <!-- <p>Tasks to be done while a trip(2.7) -
-    Ако потребител има дейности които бих искал да извърши
-    по време на пътуване си, то той създава списък с задачи които
-    имат крайна дата за изпълнение и приоритет.
-    По време на пътуване потребител получава нотификации за тези дейности.</p> -->
-<p>TODO list for your trip.</p>
-<p>set priority, deadline and notifications for these TODOs</p>
+  Ако потребител има дейности които бих искал да извърши
+  по време на пътуване си, то той създава списък с задачи които
+  имат крайна дата за изпълнение и приоритет.
+  По време на пътуване потребител получава нотификации за тези дейности.</p> -->
+  <p>TODO list for your trip.</p>
+  <p>set priority, deadline and notifications for these TODOs</p>
   <ul class="trip-checklist">
     <li class="">
       <div class="flex space-between horizontal">
         <input  class="flex2" type="text" value="meet Christopher"/>
         <p class="flex2">til 23.09.2018</p>
         <div class="flex flex2 flex-end horizontal">
-          <i class="fa fa-clock-o"></i>
-            <i class="fa fa-check"></i>
-            <i class="fa fa-trash"></i>
+          <i onclick="openModal()" class="fa fa-clock-o"></i>
+          <i class="fa fa-check"></i>
+          <i class="fa fa-trash"></i>
         </div>
       </div>
     </li>
@@ -23,11 +23,51 @@
         <input class="flex2" type="text" value="try national food"/>
         <p class="flex2">til 29.08.2018</p>
         <div class="flex flex2 flex-end horizontal">
-          <i class="fa fa-clock-o"></i>
+          <i onclick="openModal()" class="fa fa-clock-o"></i>
           <i class="fa fa-check"></i>
           <i class="fa fa-trash"></i>
         </div>
       </div>
     </li>
   </ul>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="notification-time flex vertical">
+        <label for="appt-time">Choose notification time: </label>
+        <input id="appt-time" type="time" name="appt-time" value="13:30">
+        <input type="submit" value="submit"/>
+      </div>
+    </div>
+
+  </div>
 </div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+function openModal() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
