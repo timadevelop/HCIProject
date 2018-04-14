@@ -5,4 +5,35 @@
   <h1>Services</h1>
   <a id="add_btn" href="company_add_service.html">Add Service</a>
 </div>
+<div class="hidden" id="modify-trip-checklist">
+  <ul class="trip-checklist">
+    <li>
+      <div class="flex space-between horizontal">
+        <input type="text" value="Insurance in Alianz" class="align-self-center"/>
+        <div class="flex flex-end horizontal">
+            <i class="fa fa-pencil" onclick="location.href='company_add_service.html?name=Insurance in Alianz&descr=descriptio1&price=2&details=details1';"></i>
+            <i class="fa fa-trash"></i>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="flex space-between horizontal">
+        <input type="text" value="Insurance in Bulstrad" class="align-self-center">
+        <div class="flex flex-end horizontal">
+            <i class="fa fa-pencil" onclick="location.href='company_add_service.html?name=Insurance in Bulstrad&descr=description2&price=3&details=details2';"></i>
+            <i class="fa fa-trash"></i>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="flex space-between horizontal">
+        <input type="text"value="Insurance in Ins inc." class="align-self-center"/>
+        <div class="flex flex-end horizontal">
+            <i class="fa fa-pencil" onclick="location.href='company_add_service.html?name=Insurance in Ins inc.&descr=description3&price=4&details=details3';"></i>
+            <i class="fa fa-trash"></i>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
 @@include('./company/footer.html')

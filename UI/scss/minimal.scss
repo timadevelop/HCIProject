@@ -652,6 +652,10 @@ ul.blocknav {
 .footer > * {
   margin: 5px 10px;
 }
+
+.align-self-center {
+  align-self: center;
+}
 /* imports */
 @import 'me';
 @import 'index';

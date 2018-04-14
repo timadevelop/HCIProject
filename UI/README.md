@@ -35,7 +35,7 @@ Yup.
 
 2.11 - DONE? - (`trip/integrations.html`)
 
-2.12 - added, TODO: add some mock data (ability to edit existing?) - (`company_add_service.html`)
+2.12 - DONE? - (`company_add_service.html`)
 
 2.13 - added, TODO: add some mock data (ability to edit existing?) - (`company_add_partner.html`)
 

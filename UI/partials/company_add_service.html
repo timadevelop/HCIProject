@@ -1,7 +1,7 @@
 @@include('./company/header.html', {
   "selectedItem": "services"
 })
-<h1>Add New Service</h1>
+<h1 id="title">Add New Service</h1>
 <form action="" class="ui-form no-padding">
   <div class="form-row">
     <input type="text" id="service_name" required autocomplete="off"><label for="service_name">Service name</label>
@@ -15,6 +15,31 @@
   <div class="form-row">
     <input type="text" id="details" required autocomplete="off"><label for="details">Additional details</label>
   </div>
-  <p><input type="submit" value="Add" class="button-1"></p>
+  <p><input type="submit" id="add_service_btn" value="Add" class="button-1"></p>
 </form>
+
+<script>
+  function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, " "));
+  }
+
+  let name = getParameterByName('name');
+  let descr = getParameterByName('descr');
+  let price = getParameterByName('price');
+  let details = getParameterByName('details');
+  if (name && descr && price && details) {
+    document.getElementById('service_name').value = name;
+    document.getElementById('description').value = descr;
+    document.getElementById('price').value = price;
+    document.getElementById('details').value = details;
+    document.getElementById('title').innerText = "Edit Service";
+    document.getElementById('add_service_btn').value = "Save";
+  }
+</script>
 @@include('./company/footer.html')
