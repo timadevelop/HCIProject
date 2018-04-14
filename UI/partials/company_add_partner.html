@@ -1,7 +1,7 @@
 @@include('./company/header.html', {
   "selectedItem": "partners"
 })
-<h1>Propose New Partnership</h1>
+<h1 id="title">Propose New Partnership</h1>
 <form action="" class="ui-form no-padding">
   <div class="form-row">
     <input type="text" id="partnership_name" required autocomplete="off"><label for="partnership_name">Partnership name</label>
@@ -10,23 +10,48 @@
     <input type="text" id="description" required autocomplete="off"><label for="description">Description</label>
   </div>
   <div class="form-row">
-    <label for="price">Type</label>
-    <select>
-      <option value="volvo">Insurance</option>
-      <option value="saab">Taxi</option>
-      <option value="mercedes">Rent-a-car</option>
-      <option value="audi">Hotel</option>
+    <label>Type</label>
+    <select id="partn_type">
+      <option value="ins">Insurance</option>
+      <option value="taxi">Taxi</option>
+      <option value="rent-a-car">Rent-a-car</option>
+      <option value="hotel">Hotel</option>
     </select>
   </div>
   <div class="form-row">
-    <label for="price">Desired partner company</label>
-    <select>
-      <option value="volvo">Bulstrad</option>
-      <option value="saab">Fast taxi inc.</option>
-      <option value="mercedes">Cars co</option>
-      <option value="audi">Hilton</option>
+    <label>Desired partner company</label>
+    <select id="partn">
+      <option value="bulstrad">Bulstrad</option>
+      <option value="taxi">Fast taxi inc.</option>
+      <option value="car-rent">Cars co</option>
+      <option value="hilton">Hilton</option>
     </select>
   </div>
-  <p><input type="submit" value="Send proposal" class="button-1"></p>
+  <p><input type="submit" id="new_partner_btn" value="Send proposal" class="button-1"></p>
 </form>
+
+<script>
+  function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, " "));
+  }
+
+  let name = getParameterByName('name');
+  let descr = getParameterByName('descr');
+  let type = getParameterByName('type');
+  let partner = getParameterByName('partn');
+  if (name && descr && type && partner) {
+    document.getElementById('partnership_name').value = name;
+    document.getElementById('description').value = descr;
+    document.getElementById('partn_type').value = type;
+    document.getElementById('partn').value = partner;
+    document.getElementById('title').innerText = "Edit Partnership";
+    document.getElementById('new_partner_btn').value = "Propose changes";
+  }
+</script>
 @@include('./company/footer.html')

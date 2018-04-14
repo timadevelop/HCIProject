@@ -2,7 +2,29 @@
   "selectedItem": "partners"
 })
 <div class="flex">
-  <h1>Partners</h1>
+  <h1>Partnerships</h1>
   <a id="add_btn" href="company_add_partner.html">Propose partnership</a>
+</div>
+<div class="hidden" id="modify-trip-checklist">
+  <ul class="trip-checklist">
+    <li>
+      <div class="flex space-between horizontal">
+        <input type="text" value="Taxi discount" class="align-self-center"/>
+        <div class="flex flex-end horizontal">
+            <i class="fa fa-pencil" onclick="location.href='company_add_partner.html?name=Taxi discount&descr=descriptio1&type=taxi&partn=taxi';"></i>
+            <i class="fa fa-trash"></i>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="flex space-between horizontal">
+        <input type="text" value="Hotel room priority" class="align-self-center">
+        <div class="flex flex-end horizontal">
+            <i class="fa fa-pencil" onclick="location.href='company_add_partner.html?name=Hotel room priority&descr=description2&type=hotel&partn=hilton';"></i>
+            <i class="fa fa-trash"></i>
+        </div>
+      </div>
+    </li>
+  </ul>
 </div>
 @@include('./company/footer.html')
