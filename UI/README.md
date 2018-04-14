@@ -17,19 +17,19 @@ Yup.
 
 2.2 - DONE - (`login.html`)
 
-2.3 - DONE? (maybe add some route) - (`trip/scenario.html`)
+2.3 - DONE? - (`trip/scenario.html`)
 
 2.4 - DONE? - (`trip/transport.html`)
 
 2.5 - DONE? - (`trip/checklist.html`)
 
-2.6 - DONE? - show alarm setter? - (`trip/services.html`)
+2.6 - DONE? - TODO: show alarm setter? - (`trip/services.html`)
 
 2.7 - DONE? - (`trip/tasks.html`)
 
 2.8 - DONE? - (`trip/travelers.html`)
 
-2.9 - DONE  - but change disqus server - (`trip/reviews.html`)
+2.9 - DONE  - TODO: but change disqus server - (`trip/reviews.html`)
 
 2.10 - DONE? - (`trip/cost.html`)
 

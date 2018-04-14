@@ -635,6 +635,12 @@ ul.blocknav {
   padding: 0 !important;
 }
 
+
+.center_inside > * {
+  margin: auto 10px;
+  text-align: center;
+}
+
 /* imports */
 @import 'me';
 @import 'index';
