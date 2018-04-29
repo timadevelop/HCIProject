@@ -2,6 +2,7 @@ Yup.
 
 ## cmds
 
+`npm install` - download all dependencies
 
 `gulp build` for building
 
