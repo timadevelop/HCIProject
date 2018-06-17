@@ -1,0 +1,32 @@
+{
+  "trip": {
+    "attributes": {
+      "title": {
+        "appearance": ""
+      },
+      "date": {
+        "appearance": ""
+      },
+      "description": {
+        "appearance": ""
+      }
+    }
+  },
+  "tri": {
+    "attributes": {
+      "title": {
+        "appearance": ""
+      }
+    }
+  },
+  "article": {
+    "attributes": {
+      "title": {
+        "appearance": ""
+      },
+      "content": {
+        "appearance": ""
+      }
+    }
+  }
+}

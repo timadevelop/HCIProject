@@ -8,6 +8,7 @@ sass = require('gulp-sass'),
 fileinclude = require('gulp-file-include');
 
 var pages = ['index.html',
+'me_users.html',
 'login.html',
 'about.html',
 'login_company.html',
@@ -51,7 +52,7 @@ gulp.task("concatPages", function() {
 
 gulp.task("watch", function() {
   livereload.listen();
-  return gulp.watch(['partials/*.html', 'scss/*', 'img/*', 'js/*'], ['build'])
+  return gulp.watch(['partials/*.html', 'partials/*/*', 'scss/*', 'img/*', 'js/*'], ['build'])
 })
 
 gulp.task('clean', function() {

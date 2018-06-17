@@ -1,0 +1,34 @@
+<ul class="trips">
+</ul>
+
+<script>
+  const list = document.getElementsByClassName('trips')[0];
+  //
+  // ajax callback
+  //
+  var callback = function(data) {
+    data = JSON.parse(data);
+    data.forEach((e) => {
+      console.log(e);
+      // entry.appendChild(document.createTextNode('some'));
+      let s = `
+      <li class="trip">
+        <div class="flex space-between horizontal">
+          <img style="width: 50px; height: 50px;" class="flex1" src="img/user.png"/>
+          <div class="flex3 trip-content flex vertical">
+            <a href="trip.html"><h4>${e.username}</h4></a>
+            <p>role: ${e.role.name}</p>
+            <p>trips: ${e.trips.length}</p>
+          </div>
+        </div>
+        </li>
+      `;
+      list.appendChild(createElementFromHTML(s));
+    });
+  };
+
+  ajax(base + '/user', {
+    success: callback,
+    method: 'GET',
+  });
+</script>
