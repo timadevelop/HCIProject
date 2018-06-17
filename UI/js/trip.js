@@ -20,6 +20,7 @@ function changeTab(el, tabName) {
 var callback = function(data) {
   data = JSON.parse(data);
   console.log(data);
+  document.getElementById('trip_logo').src = base + data.media[0].url;
   document.getElementById('trip_title').innerHTML = data.title;
   document.getElementById('trip_description').innerHTML = data.description;
   document.getElementById('trip_description_long').innerHTML = data.description;
