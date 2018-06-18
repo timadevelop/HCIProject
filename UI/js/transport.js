@@ -14,13 +14,6 @@ function filter(value) {
 window.onload = function() {
 
   waitForElement(() => initTransport());
-
-  function deleteFromScenario(e) {
-    // update scenario
-
-    alert('TODO: delete ' + e + ' from scenario');
-  }
-
   function initTransport() {
     console.log('transport_item init')
     const selection = document.getElementById('transport_selection');

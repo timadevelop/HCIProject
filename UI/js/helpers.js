@@ -1,5 +1,4 @@
 const base = 'http://localhost:1337';
-// const list = document.getElementsByClassName('trips')[0];
 //
 // Ajax stuff
 //
@@ -32,5 +31,12 @@ function waitForElement(callback) {
       console.log("ERRRRRRRRRRRRRRRR");
   } else {
     setTimeout(waitForElement, 250);
+  }
+}
+
+function multiplyNode(node, count, deep) {
+  for (var i = 0, copy; i < count - 1; i++) {
+    copy = node.cloneNode(deep);
+    node.parentNode.insertBefore(copy, node);
   }
 }

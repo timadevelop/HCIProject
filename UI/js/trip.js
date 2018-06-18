@@ -27,11 +27,6 @@ var callback = function(data) {
   document.getElementById('trip_description').innerHTML = data.description;
   document.getElementById('trip_description_long').innerHTML = data.description;
   document.getElementById('trip_date').innerHTML = data.createdAt;
-  // entry.appendChild(document.createTextNode('some'));
-  // let s = `
-  // `;
-  // list.appendChild(createElementFromHTML(s));
-  // showRegistered(JSON.parse(text));
 };
 
 

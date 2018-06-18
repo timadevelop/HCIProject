@@ -1,14 +1,14 @@
-  const list = document.getElementsByClassName('trips')[0];
-  //
-  // ajax callback
-  //
-  var callback = function(data) {
-    data = JSON.parse(data);
-    data.forEach((e) => {
-      console.log(e);
-      // entry.appendChild(document.createTextNode('some'));
-      let s =
-        `
+const list = document.getElementsByClassName('trips')[0];
+//
+// ajax callback
+//
+var callback = function(data) {
+  data = JSON.parse(data);
+  data.forEach((e) => {
+    console.log(e);
+    // entry.appendChild(document.createTextNode('some'));
+    let s =
+      `
       <li class="trip">
         <div class="flex space-between horizontal">
           <a href="trip.html?id=${e._id}">
@@ -20,28 +20,13 @@
             <p>created : ${e.createdAt}</p>
           </div>
         </div>
-<!-- <div class="flex flex1 flex-end vertical">
-        <a class="btn">remove</a>
-        <a class="btn">share</a>
-      </div> -->
-
         </li>
       `;
-      list.appendChild(createElementFromHTML(s));
-    });
-    // showRegistered(JSON.parse(text));
-  };
-
-  ajax(base + '/trip', {
-    success: callback,
-    method: 'GET',
+    list.appendChild(createElementFromHTML(s));
   });
+};
 
-  function multiplyNode(node, count, deep) {
-    for (var i = 0, copy; i < count - 1; i++) {
-      copy = node.cloneNode(deep);
-      node.parentNode.insertBefore(copy, node);
-    }
-  }
-
-  // multiplyNode(document.querySelector('.trip'), 7, true);
+ajax(base + '/trip', {
+  success: callback,
+  method: 'GET',
+});

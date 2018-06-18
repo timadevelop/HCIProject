@@ -1,8 +1,7 @@
 console.log('here');
 
 function deleteFromScenario(e) {
-  // update scenario
-
+  //TODO: update scenario UPDATE TO SERVER WITH NEW SCENARIO JSON ARRAY
   alert('TODO: delete ' + e + ' from scenario');
 };
 
