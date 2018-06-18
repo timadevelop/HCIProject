@@ -1,4 +1,4 @@
-const base = 'https://cryptic-dawn-26208.herokuapp.com/';
+const base = 'https://cryptic-dawn-26208.herokuapp.com';
 //
 // Ajax stuff
 //
