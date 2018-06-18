@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Scripts -->
+    <script src="js/helpers.js"></script>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <link rel="stylesheet" href="css/minimal.css">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Meta Info -->
+    <title>Navigatio</title>
+    <meta name="description" content="organize all your travel plans in one place" />
+  </head>
+  <!-- Start Page -->
+  <body>
+    <div class="container">
+      <header>
+        <div class="wrapper-top">
+            <h1>Navigatio</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<div class="me-section">
+  <div class="horizontal me-header">
+    <img class="user-logo" src="img/original.jpeg"/>
+    <div class="vertical">
+      <h1>Geogri Ivanov</h1>
+      <p>@geogri</p>
+      <p>1372 trips, 1743 plans</p>
+    </div>
+  </div>
+
+  <div class="flex horizontal">
+    <div class="flex1 me-nav vertical">
+      <!-- for loop TODO -->
+      
+      
+        <a href="trips.html">Trips</a>
+      
+
+      
+      
+        <a href="search.html">Search</a>
+      
+
+      
+      
+        <a href="services.html">Services</a>
+      
+      
+      
+        <a href="companies.html">Companies</a>
+      
+      
+
+
+    </div>
+    <div class="flex3 me-content">
+      <hr>
+
+<ul class="trips">
+</ul>
+
+<script>
+  const list = document.getElementsByClassName('trips')[0];
+  //
+  // ajax callback
+  //
+  var callback = function(data) {
+    data = JSON.parse(data);
+    data.forEach((e) => {
+      console.log(e);
+      // entry.appendChild(document.createTextNode('some'));
+      let s = `
+      <li class="trip">
+        <div class="flex space-between horizontal">
+          <img style="width: 50px; height: 50px;" class="flex1" src="img/user.png"/>
+          <div class="flex3 trip-content flex vertical">
+            <a href="trip.html"><h4>${e.username}</h4></a>
+            <p>role: ${e.role.name}</p>
+            <p>trips: ${e.trips.length}</p>
+          </div>
+        </div>
+        </li>
+      `;
+      list.appendChild(createElementFromHTML(s));
+    });
+  };
+
+  ajax(base + '/user', {
+    success: callback,
+    method: 'GET',
+  });
+</script>
+
+</div>
+<div class="flex flex1 vertical card">
+  <p>Best trips this week:</p>
+  <a href="#">My trip to Asia</a>
+  <a href="#">Berlin, meet us</a>
+  <a href="#">London dream</a>
+  <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p> -->
+</div>
+</div>
+</div>
+
+
+<hr />
+<div class="flex horizontal flex-start footer">
+  <a href="index.html">Home</a>
+  <a href="trips.html">Trips</a>
+  <a href="login.html">Login</a>
+  <a href="trip.html">Random Trip</a>
+  <a href="mailto:timadevelop@gmail.com">Contact Us</a>
+</div>
+</div>
+</body>
+</html>

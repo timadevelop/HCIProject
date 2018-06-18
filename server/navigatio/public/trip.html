@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Scripts -->
+    <script src="js/helpers.js"></script>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <link rel="stylesheet" href="css/minimal.css">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Meta Info -->
+    <title>Navigatio</title>
+    <meta name="description" content="organize all your travel plans in one place" />
+  </head>
+  <!-- Start Page -->
+  <body>
+    <div class="container">
+      <header>
+        <div class="wrapper-top">
+            <h1>Navigatio</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<!-- Add icon library -->
+<script src="js/trip.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="me-section">
+  <div class="me-content">
+    <div class="flex space-between horizontal">
+      <a href="trips.html" class="bold">Back to Trips</a>
+      <a href="trips.html" class="bold">Remove this trip</a>
+    </div>
+    <div class="flex3">
+      <div class="trip">
+        <div class="flex space-between vertical">
+          <a>
+          <img class="flex1 trip-logo" id="trip_logo" style="margin:0;" src="img/some_logo.jpeg"/>
+        </a>
+          <div class="flex3 trip-content flex vertical">
+            <a>
+              <h4 id="trip_title">Trip to Asia</h4>
+            </a>
+            <p id="trip_description">short description</p>
+            <p id="trip_date">created : 22.01.2016</p>
+          </div>
+          <!-- <div class="flex flex1 horizontal trip-buttons space-around">
+          <a class="btn">remove</a>
+          <a class="btn">share</a>
+        </div> -->
+          <hr>
+          <div class="trip-long-content" id="trip_description_long">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <hr>
+          <div class="trip-navigation">
+            <nav id="trip-tabs" class="flex horizontal space-around">
+              <a onclick="changeTab(this, 'modify-trip-scenario')" class="selected">Scenario</a>
+              <a onclick="changeTab(this, 'modify-trip-transport')">Transport</a>
+              <a onclick="changeTab(this, 'modify-trip-checklist')">Checklist</a>
+              <a onclick="changeTab(this, 'modify-trip-services')">Services</a>
+              <a onclick="changeTab(this, 'modify-trip-tasks')">Tasks</a>
+              <a onclick="changeTab(this, 'modify-trip-travelers')">Travelers</a>
+            </nav>
+
+            <div id="fragments">
+              <div id="modify-trip-scenario">
+
+  <!-- <p>input here points(point 2.3)</p> -->
+  <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/directions?origin=place_id:ChIJ9Xsxy4KGqkARYF6_aRKgAAQ&destination=place_id:ChIJdd4hrwug2EcRmSrV3Vo6llI&key=AIzaSyC3enjNB85Q9RzgtQgE82eg5E8K8w0Wloc" allowfullscreen>
+</iframe>
+  <p>Here is a trip scenario, you can change it!</p>
+  <ul id="scenario-list">
+  </ul>
+</div>
+
+<script src="js/me_scenario.js"></script>
+ <div class="hidden" id="modify-trip-transport">
+  <p>Choose the way to travel: </p>
+  <select name="transport-list" id="transport_selection" onchange="filter(this.options[this.selectedIndex].value)">
+    <option value="own">own</option>
+    <option value="rent-a-car">rent-a-car</option>
+    <option value="taxi">taxi</option>
+    <option value="bike">bike</option>
+  </select>
+  <ul id="transport_list">
+    <li class="transport_item">
+      <div class="flex space-between horizontal">
+        <p class="type">own</p>
+        <p>Ok, you can find it yourself</p>
+      </div>
+    </li>
+    <!-- rent a car -->
+    <li class="transport_item">
+      <div class="flex space-between horizontal">
+        <p class="type">rent-a-car</p>
+        <p class="flex2">BMW e39</p>
+        <p class="flex1">20$/day</p>
+        <p class="flex2">provided by Rcar Ltd.</p>
+        <div class="flex flex2 flex-end horizontal">
+            <i class="fa fa-check">rent</i>
+            <i class="fa fa-trash">hide</i>
+        </div>
+      </div>
+    </li>
+    <li class="transport_item">
+      <div class="flex space-between horizontal">
+        <p class="type">rent-a-car</p>
+        <p class="flex2">Mercedes Benz E200</p>
+        <p class="flex1">30$/day</p>
+        <p class="flex2">provided by Rcar Ltd.</p>
+
+        <div class="flex flex2 flex-end horizontal">
+            <i class="fa fa-check">rent</i>
+            <i class="fa fa-trash">hide</i>
+        </div>
+        </div>
+    </li>
+    <li class="transport_item">
+      <div class="flex space-between horizontal">
+        <p class="type">rent-a-car</p>
+        <p class="flex2">Mazda 3</p>
+        <p class="flex1">15$/day</p>
+        <p class="flex2">provided by rentMe Ltd.</p>
+        <div class="flex flex2 flex-end horizontal">
+            <i class="fa fa-check">rent</i>
+            <i class="fa fa-trash">hide</i>
+        </div>
+      </div>
+    </li>
+    <!-- taxi -->
+
+    <li class="transport_item">
+      <div class="flex space-between horizontal">
+        <p class="type">taxi</p>
+        <p class="flex2">from airport</p>
+        <p class="flex1">1$/mile</p>
+        <p class="flex2">provided by taxLw Ltd.</p>
+        <div class="flex flex2 flex-end horizontal">
+            <i class="fa fa-check">get</i>
+            <i class="fa fa-trash">hide</i>
+        </div>
+      </div>
+    </li>
+
+    <li class="transport_item">
+      <div class="flex space-between horizontal">
+        <p class="type">taxi</p>
+        <p class="flex2">from bus station</p>
+        <p class="flex1">0.7$/mile</p>
+        <p class="flex2">provided by taxLw Ltd.</p>
+        <div class="flex flex2 flex-end horizontal">
+            <i class="fa fa-check">get</i>
+            <i class="fa fa-trash">hide</i>
+        </div>
+      </div>
+    </li>
+
+
+    <!-- bike -->
+
+    <li class="transport_item">
+      <div class="flex space-between horizontal">
+        <p class="type">bike</p>
+        <p class="flex2">ELECTRIFIED bike share</p>
+        <p class="flex1">1$/hour</p>
+        <p class="flex2">provided by JUMP Ltd.</p>
+        <div class="flex flex2 flex-end horizontal">
+            <i class="fa fa-check">get</i>
+            <i class="fa fa-trash">hide</i>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<script src="js/transport.js"></script>
+ <div class="hidden" id="modify-trip-checklist">
+  <!-- <p>(2.5) - Потребител създава чеклист с необходими неща,
+    задава аларми и нотификации за себе си и екипа на пътуване.
+     Добавя в списък „застраховка от компания Х “,
+      което автоматично праща заявка към застраховаща компания.</p> -->
+
+<p>Create a checklist of stuff you need and set alarms/notifications for yourself or other travelers</p>
+  <ul class="trip-checklist" id="trip_checklist">
+  </ul>
+</div>
+<script src="js/checklist.js"></script>
+ 
+<div class="hidden" id="modify-trip-services">
+  <ul id="trip_services_list">
+    <li>
+      <div class="flex horizontal space-between trip_service_item">
+        <img class="flex1" src="img/uber.png"/>
+        <!-- <div class="flex vertical"> -->
+        <h5 class="flex3">Uber</h5>
+        <p class="flex1">|</p>
+        <p class="flex3">service: Taxi</p>
+        <p class="flex1">|</p>
+        <p class="flex3">40935 clients</p>
+        <!-- </div> -->
+      </div>
+    </li>
+    <li>
+      <div class="flex horizontal space-between trip_service_item">
+        <img class="flex1" src="img/aviasales.jpg"/>
+        <!-- <div class="flex vertical"> -->
+        <h5 class="flex3">Aviasales</h5>
+        <p class="flex1">|</p>
+        <p class="flex3">service: Air tickets</p>
+        <p class="flex1">|</p>
+        <p class="flex3">20245 clients</p>
+        <!-- </div> -->
+      </div>
+    </li>
+    <li>
+      <div class="flex horizontal space-between trip_service_item">
+        <img class="flex1" src="img/jump.jpg"/>
+        <!-- <div class="flex vertical"> -->
+        <h5 class="flex3">JUMP</h5>
+        <p class="flex1">|</p>
+        <p class="flex3">service: Bike share</p>
+        <p class="flex1">|</p>
+        <p class="flex3">8459 clients</p>
+        <!-- </div> -->
+      </div>
+    </li>
+
+  </ul>
+</div>
+ <div class="hidden" id="modify-trip-tasks">
+  <!-- <p>Tasks to be done while a trip(2.7) -
+  Ако потребител има дейности които бих искал да извърши
+  по време на пътуване си, то той създава списък с задачи които
+  имат крайна дата за изпълнение и приоритет.
+  По време на пътуване потребител получава нотификации за тези дейности.</p> -->
+  <p>TODO list for your trip.</p>
+  <p>set priority, deadline and notifications for these TODOs</p>
+  <ul class="trip-checklist" id="trip_tasks_list">
+  </ul>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="notification-time flex vertical">
+        <label for="appt-time">Choose notification time: </label>
+        <input id="appt-time" type="time" name="appt-time" value="13:30">
+        <input type="submit" value="submit"/>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="js/me_tasks.js"></script>
+ 
+<div class="hidden" id="modify-trip-travelers">
+  <p>These people are your team for this trip!</p>
+  <!-- <p> 2.8
+    Към вече дефиниран сценарии за пътуване (2.3) потребителят,
+    създал сценария, праща покани към други регистрирани потребители.
+    Също така той наглася правата на поканените потребители относно пътуването
+    – до каква степен те могат да го променят.</p> -->
+    <ul id="trip_travelers_list">
+      <li>
+        <div class="flex horizontal space-between trip_traveler_item">
+          <img class="flex1" src="img/user.png"/>
+          <!-- <div class="flex vertical"> -->
+            <h5 class="flex3">you</h5>
+            <p class="flex1">|</p>
+            <p class="flex3">admin</p>
+            <p class="flex1">|</p>
+            <p class="flex3">10472 trips</p>
+          <!-- </div> -->
+        </div>
+      </li>
+      <li>
+        <div class="flex horizontal space-between trip_traveler_item">
+          <img class="flex1" src="img/user.png"/>
+          <!-- <div class="flex vertical"> -->
+            <h5 class="flex3">Ivo Georgiev</h5>
+            <p class="flex1">|</p>
+            <p class="flex3">admin</p>
+            <p class="flex1">|</p>
+            <p class="flex3">9328 trips</p>
+          <!-- </div> -->
+        </div>
+      </li>
+      <li>
+        <div class="flex horizontal space-between trip_traveler_item">
+          <img class="flex1" src="img/user.png"/>
+          <!-- <div class="flex vertical"> -->
+            <h5 class="flex3">Chris Donnalo</h5>
+            <p class="flex1">|</p>
+            <p class="flex3">services discovery</p>
+            <p class="flex1">|</p>
+            <p class="flex3">814 trips</p>
+          <!-- </div> -->
+        </div>
+      </li>
+    </ul>
+  </div>
+
+            </div>
+          </div>
+          <hr> <div class="trip-cost">
+  <p>Summary costs</p>
+    <!-- (p 2.10)</p> -->
+  <ul id="trip_cost_list">
+    <li>
+      <div class="flex horizontal space-between trip_cost_item">
+        <p class="flex3">Taxi</p>
+        <p class="flex1">|</p>
+        <p class="flex3">by: Uber</p>
+        <p class="flex1">|</p>
+        <p class="flex3">50$</p>
+        <i class="fa fa-trash" style="width:10px;height:10px;padding:0;margin:0;"></i>
+      </div>
+    </li>
+    <li>
+      <div class="flex horizontal space-between trip_cost_item">
+        <p class="flex3">Air ticked</p>
+        <p class="flex1">|</p>
+        <p class="flex3">by: Aviasales</p>
+        <p class="flex1">|</p>
+        <p class="flex3">250$</p>
+        <i class="fa fa-trash" style="width:10px;height:10px;padding:0;margin:0;"></i>
+      </div>
+    </li>
+    <li>
+      <div class="flex horizontal space-between trip_cost_item">
+        <p class="flex3">House rent</p>
+        <p class="flex1">|</p>
+        <p class="flex3">by: Airbnb</p>
+        <p class="flex1">|</p>
+        <p class="flex3">500$</p>
+        <i class="fa fa-small-btn fa-trash"></i>
+      </div>
+    </li>
+
+      <li>
+        <div class="flex horizontal flex-end trip_cost_item" id="cost_final">
+          <p>Summary:</p>
+          <p>50$</p>
+        </div>
+      </li>
+
+  </div>
+
+          <hr> 
+<div class="trip-integrations">
+  <p>Integrations</p>
+  <p>Export trip data directly to your calendar</p>
+  <!-- 2.11 -  -->
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-google"></a>
+  <a href="#" class="fa fa-apple"></a>
+  <a href="#" class="fa fa-windows"></a>
+  <a href="#" class="fa fa-calendar-check-o"></a>
+  <!-- <a href="#" class="fa fa-instagram"></a> -->
+  <!-- <a href="#" class="fa fa-pinterest"></a> -->
+
+</div>
+
+          <hr> <div class="trip-reviews">
+  <p>Reviews</p>
+  <!-- <p> (point 2.9)</p> -->
+
+  <div id="disqus_thread"></div>
+
+</div>
+
+<script src="js/disqus.js"></script>
+<noscript>
+  Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript" rel="nofollow">
+    comments powered by Disqus.
+  </a>
+</noscript>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<hr />
+<div class="flex horizontal flex-start footer">
+  <a href="index.html">Home</a>
+  <a href="trips.html">Trips</a>
+  <a href="login.html">Login</a>
+  <a href="trip.html">Random Trip</a>
+  <a href="mailto:timadevelop@gmail.com">Contact Us</a>
+</div>
+</div>
+</body>
+</html>
