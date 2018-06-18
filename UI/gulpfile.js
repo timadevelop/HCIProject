@@ -48,6 +48,8 @@ gulp.task("concatPages", function() {
     .pipe(gulp.dest('public'))
     .pipe(livereload());
   });
+  gulp.src(['partials/demo.html'])
+  .pipe(gulp.dest('public'));
 });
 
 gulp.task("watch", function() {
