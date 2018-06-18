@@ -6,29 +6,7 @@
   По време на пътуване потребител получава нотификации за тези дейности.</p> -->
   <p>TODO list for your trip.</p>
   <p>set priority, deadline and notifications for these TODOs</p>
-  <ul class="trip-checklist">
-    <li class="">
-      <div class="flex space-between horizontal">
-        <input  class="flex2" type="text" value="meet Christopher"/>
-        <p class="flex2">til 23.09.2018</p>
-        <div class="flex flex2 flex-end horizontal">
-          <i onclick="openModal()" class="fa fa-clock-o"></i>
-          <i class="fa fa-check"></i>
-          <i class="fa fa-trash"></i>
-        </div>
-      </div>
-    </li>
-    <li class="">
-      <div class="flex space-between horizontal">
-        <input class="flex2" type="text" value="try national food"/>
-        <p class="flex2">til 29.08.2018</p>
-        <div class="flex flex2 flex-end horizontal">
-          <i onclick="openModal()" class="fa fa-clock-o"></i>
-          <i class="fa fa-check"></i>
-          <i class="fa fa-trash"></i>
-        </div>
-      </div>
-    </li>
+  <ul class="trip-checklist" id="trip_tasks_list">
   </ul>
 
   <!-- The Modal -->
@@ -47,27 +25,4 @@
   </div>
 </div>
 
-<script>
-// Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal
-function openModal() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
+<script src="js/me_tasks.js"></script>
