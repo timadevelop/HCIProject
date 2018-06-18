@@ -1,6 +1,6 @@
 <div class="hidden" id="modify-trip-transport">
   <p>Choose the way to travel: </p>
-  <select name="transport-list" onchange="filter(this.options[this.selectedIndex].value)">
+  <select name="transport-list" id="transport_selection" onchange="filter(this.options[this.selectedIndex].value)">
     <option value="own">own</option>
     <option value="rent-a-car">rent-a-car</option>
     <option value="taxi">taxi</option>
@@ -97,6 +97,4 @@
   </ul>
 </div>
 
-<script src="js/transport.js">
-
-</script>
+<script src="js/transport.js"></script>

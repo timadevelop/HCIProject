@@ -1,0 +1,24 @@
+{
+  "connection": "default",
+  "collectionName": "checklist",
+  "info": {
+    "name": "checklist",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "tasks": {
+      "collection": "task",
+      "via": "checklist"
+    },
+    "trip": {
+      "model": "trip",
+      "via": "checklist"
+    }
+  }
+}

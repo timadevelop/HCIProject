@@ -42,6 +42,10 @@
     "trips": {
       "collection": "trip",
       "via": "owner"
+    },
+    "sideTrips": {
+      "collection": "trip",
+      "via": "travelers"
     }
   }
 }

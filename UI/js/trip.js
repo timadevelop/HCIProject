@@ -14,11 +14,13 @@ function changeTab(el, tabName) {
   document.getElementById(tabName).classList.remove('hidden');
 }
 
+let global_data = null;
 //
 // ajax callback
 //
 var callback = function(data) {
   data = JSON.parse(data);
+  global_data = data;
   console.log(data);
   document.getElementById('trip_logo').src = base + data.media[0].url;
   document.getElementById('trip_title').innerHTML = data.title;

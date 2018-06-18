@@ -9,6 +9,18 @@
       },
       "description": {
         "appearance": ""
+      },
+      "tasks": {
+        "appearance": ""
+      },
+      "checklist": {
+        "appearance": ""
+      },
+      "transport": {
+        "appearance": ""
+      },
+      "scenario": {
+        "appearance": ""
       }
     }
   },
@@ -25,6 +37,23 @@
         "appearance": ""
       },
       "content": {
+        "appearance": ""
+      }
+    }
+  },
+  "task": {
+    "attributes": {
+      "text": {
+        "appearance": ""
+      },
+      "date": {
+        "appearance": ""
+      }
+    }
+  },
+  "checklist": {
+    "attributes": {
+      "name": {
         "appearance": ""
       }
     }

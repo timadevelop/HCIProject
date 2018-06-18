@@ -1,6 +1,6 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "trip",
   "info": {
     "name": "trip",
     "description": ""
@@ -27,6 +27,32 @@
       "collection": "file",
       "via": "related",
       "plugin": "upload"
+    },
+    "travelers": {
+      "collection": "user",
+      "via": "sideTrips",
+      "dominant": true,
+      "plugin": "users-permissions"
+    },
+    "transport": {
+      "type": "enumeration",
+      "enum": [
+        "own",
+        "rent-a-car",
+        "taxi",
+        "bike"
+      ]
+    },
+    "tasks": {
+      "collection": "task",
+      "via": "trip"
+    },
+    "checklist": {
+      "model": "checklist",
+      "via": "trip"
+    },
+    "scenario": {
+      "type": "json"
     }
   }
 }

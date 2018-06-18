@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/checklist",
+      "handler": "Checklist.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/checklist/count",
+      "handler": "Checklist.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/checklist/:_id",
+      "handler": "Checklist.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/checklist",
+      "handler": "Checklist.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/checklist/:_id",
+      "handler": "Checklist.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/checklist/:_id",
+      "handler": "Checklist.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
