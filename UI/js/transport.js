@@ -11,13 +11,11 @@ function filter(value) {
 
 }
 
-window.onload = function() {
+setTimeout(() => waitForElement(initTransport), 1000);
 
-  waitForElement(() => initTransport());
-  function initTransport() {
-    console.log('transport_item init')
-    const selection = document.getElementById('transport_selection');
-    selection.value = global_data.transport;
-    filter(global_data.transport);
-  }
+function initTransport() {
+  console.log('transport_item init')
+  const selection = document.getElementById('transport_selection');
+  selection.value = global_data.transport;
+  filter(global_data.transport);
 }
