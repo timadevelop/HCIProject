@@ -5,14 +5,14 @@
       "connector": "strapi-mongoose",
       "settings": {
         "client": "mongo",
-        "host": "ds016108.mlab.com",
-        "port": 16108,
+        "host": "127.0.0.1",
+        "port": 27017,
         "database": "navigatio",
         "username": "admin",
-        "password": "admin1"
+        "password": "password"
       },
       "options": {
-        "authenticationDatabase": "navigatio",
+        "authenticationDatabase": "admin",
         "ssl": false
       }
     }
