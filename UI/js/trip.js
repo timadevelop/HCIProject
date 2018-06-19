@@ -24,9 +24,9 @@ var callback = function(data) {
   console.log(data);
   document.getElementById('trip_logo').src = base + data.media[0].url;
   document.getElementById('trip_title').innerHTML = data.title;
-  document.getElementById('trip_description').innerHTML = data.description;
+  document.getElementById('trip_description').innerHTML = data.description.substring(0, 103);
   document.getElementById('trip_description_long').innerHTML = data.description;
-  document.getElementById('trip_date').innerHTML = data.createdAt;
+  document.getElementById('trip_date').innerHTML = 'Created at: ' + data.createdAt;
 };
 
 
