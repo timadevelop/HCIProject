@@ -1,4 +1,4 @@
-const base = 'https://cryptic-dawn-26208.herokuapp.com';
+const base = 'http://localhost:1337';
 //
 // Ajax stuff
 //
